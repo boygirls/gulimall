@@ -1,6 +1,7 @@
 package com.fxc.gulimallproduct.controller;
 
 import java.util.Arrays;
+import java.util.List;
 import java.util.Map;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -31,14 +32,14 @@ public class PmsCategoryController {
     private PmsCategoryService pmsCategoryService;
 
     /**
-     * 列表
+     * 查出所有分类及子类，以树形结构组装起来
      */
-    @RequestMapping("/list")
+    @RequestMapping("/list/tree")
     //@RequiresPermissions("gulimallproduct:pmscategory:list")
-    public R list(@RequestParam Map<String, Object> params){
-        PageUtils page = pmsCategoryService.queryPage(params);
+    public R list(){
+        List<PmsCategoryEntity> category =  pmsCategoryService.listWithTree();
 
-        return R.ok().put("page", page);
+        return R.ok().put("page", category);
     }
 
 
@@ -50,7 +51,7 @@ public class PmsCategoryController {
     public R info(@PathVariable("catId") Long catId){
 		PmsCategoryEntity pmsCategory = pmsCategoryService.getById(catId);
 
-        return R.ok().put("pmsCategory", pmsCategory);
+        return R.ok().put("data", pmsCategory);
     }
 
     /**
@@ -60,6 +61,17 @@ public class PmsCategoryController {
     //@RequiresPermissions("gulimallproduct:pmscategory:save")
     public R save(@RequestBody PmsCategoryEntity pmsCategory){
 		pmsCategoryService.save(pmsCategory);
+
+        return R.ok();
+    }
+
+    /**
+     * 修改
+     */
+    @RequestMapping("/update/sort")
+    //@RequiresPermissions("gulimallproduct:pmscategory:update")
+    public R updateSort(@RequestBody PmsCategoryEntity[] pmsCategory){
+        pmsCategoryService.updateBatchById(Arrays.asList(pmsCategory));
 
         return R.ok();
     }
@@ -77,11 +89,15 @@ public class PmsCategoryController {
 
     /**
      * 删除
+     * mvc自动将请求的的数据json，转换为相应的对象
      */
     @RequestMapping("/delete")
     //@RequiresPermissions("gulimallproduct:pmscategory:delete")
     public R delete(@RequestBody Long[] catIds){
-		pmsCategoryService.removeByIds(Arrays.asList(catIds));
+        // 1.检查当前的菜单，是否被别的地方引用
+
+		// pmsCategoryService.removeByIds(Arrays.asList(catIds));
+        pmsCategoryService.removeMenuByIds(Arrays.asList(catIds));
 
         return R.ok();
     }

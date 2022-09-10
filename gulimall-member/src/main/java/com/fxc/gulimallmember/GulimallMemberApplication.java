@@ -3,7 +3,11 @@ package com.fxc.gulimallmember;
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
+@EnableFeignClients(basePackages = "com.fxc.gulimallmember.feign")
+@EnableDiscoveryClient
 @MapperScan("com.fxc.gulimallmember.dao")
 @SpringBootApplication
 public class GulimallMemberApplication {
