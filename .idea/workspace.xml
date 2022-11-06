@@ -1,0 +1,592 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="3bf1c784-7bb7-4e55-968d-4296942e0d68" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/fxc/common/exception/BizCodeEnume.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/fxc/common/valid/AddGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/fxc/common/valid/ListValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/fxc/common/valid/ListValueConstraintValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/fxc/common/valid/UpdateGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/java/com/fxc/common/valid/UpdateStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-common/src/main/resources/ValidationMessages.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-gateway/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-gateway/src/main/java/com/fxc/gulimallgatewat/GulimallGatewatApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-gateway/src/main/java/com/fxc/gulimallgatewat/config/CorsConfigurations.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-gateway/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-gateway/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-gateway/src/test/java/com/fxc/gulimallgatewat/GulimallGatewatApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-member/src/main/java/com/fxc/gulimallmember/feign/CouponFeignService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/exception/ExceptionControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-product/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/fxc/thirdparty/Conotroll/OssController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/fxc/thirdparty/GulimallThirdPartyApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/java/com/fxc/thirdparty/utils/OssProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/resources/application.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gulimall-third-party/src/test/java/com/fxc/thirdparty/GulimallThirdPartyApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/bootstrap.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jdk8_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_module_jackson_module_parameter_names_2_13_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_7_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_core_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_github_openfeign_feign_slf4j_11_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_12_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_agent_1_12_12.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_4_8.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_api_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_logging_log4j_log4j_to_slf4j_2_17_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_core_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_el_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_embed_tomcat_embed_websocket_9_0_65.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjweaver_1_9_7.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_22_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcpkix_jdk15on_1_68.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_bouncycastle_bcprov_jdk15on_1_68.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_2_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_params_5_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_8_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_core_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_mockito_mockito_junit_jupiter_4_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_objenesis_objenesis_3_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_9_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_skyscreamer_jsonassert_1_5_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_jul_to_slf4j_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_36.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_autoconfigure_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_aop_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_json_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_logging_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_test_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_tomcat_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_web_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_test_autoconfigure_2_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_commons_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_context_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_openfeign_core_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_openfeign_3_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_crypto_5_7_2.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_rsa_1_0_10_RELEASE.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_3_22.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_xmlunit_xmlunit_core_2_9_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_yaml_snakeyaml_1_30.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-common/gulimall-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-common/gulimall-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/gulimall-coupon.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/gulimall-coupon.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/fxc/gulimallcoupon/GulimallCouponApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/fxc/gulimallcoupon/GulimallCouponApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/fxc/gulimallcoupon/controller/CouponController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/java/com/fxc/gulimallcoupon/controller/CouponController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/src/test/java/com/fxc/gulimallcoupon/GulimallCouponApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/src/test/java/com/fxc/gulimallcoupon/GulimallCouponApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/target/classes/com/fxc/gulimallcoupon/GulimallCouponApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/target/classes/com/fxc/gulimallcoupon/GulimallCouponApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-coupon/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-coupon/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/gulimall-member.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/gulimall-member.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/src/main/java/com/fxc/gulimallmember/GulimallMemberApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/src/main/java/com/fxc/gulimallmember/GulimallMemberApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/src/main/java/com/fxc/gulimallmember/controller/MemberController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/src/main/java/com/fxc/gulimallmember/controller/MemberController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/src/test/java/com/fxc/gulimallmember/GulimallMemberApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/src/test/java/com/fxc/gulimallmember/GulimallMemberApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/target/classes/com/fxc/gulimallmember/GulimallMemberApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/target/classes/com/fxc/gulimallmember/GulimallMemberApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-member/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-order/gulimall-order.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-order/gulimall-order.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-order/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-order/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-order/src/test/java/com/fxc/gulimallorder/GulimallOrderApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-order/src/test/java/com/fxc/gulimallorder/GulimallOrderApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-order/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-order/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-order/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-order/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/gulimall-product.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/gulimall-product.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/GulimallProductApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/GulimallProductApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/controller/PmsBrandController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/controller/PmsBrandController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/controller/PmsCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/controller/PmsCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/entity/PmsBrandEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/entity/PmsBrandEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/entity/PmsCategoryEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/entity/PmsCategoryEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/service/PmsCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/service/PmsCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/service/impl/PmsCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/java/com/fxc/gulimallproduct/service/impl/PmsCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/main/resources/application.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/src/test/java/com/fxc/gulimallproduct/GulimallProductApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/src/test/java/com/fxc/gulimallproduct/GulimallProductApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/target/classes/com/fxc/gulimallproduct/GulimallProductApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/target/classes/com/fxc/gulimallproduct/GulimallProductApplication.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-product/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/gulimall-ware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/gulimall-ware.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/src/test/java/com/fxc/gulimallware/GulimallWareApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/src/test/java/com/fxc/gulimallware/GulimallWareApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gulimall-ware/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/gulimall-ware/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/RenrenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/RenrenApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/java/io/renren/config/CorsConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/application-dev.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/application-dev.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-fast/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-fast/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/renren-generator/src/main/resources/application.yml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="gulimall" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="AnnotationType" />
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\Student\gulimall\.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\environmentVariable\apache-maven-3.6.3\repository" />
+        <option name="mavenHome" value="D:/environmentVariable/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\environmentVariable\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="MavenRunner">
+    <option name="jreName" value="#JAVA_HOME" />
+    <option name="skipTests" value="true" />
+    <option name="vmOptions" value="-DarchetypeCatalog=internal" />
+  </component>
+  <component name="ProjectId" id="2DCgZbfPgOVu0V1YNmzhMzcc1tt" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="add_unversioned_files" value="true" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gulimall-product/src/main/resources" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Student\gulimall\gulimall-product\src\main\resources" />
+      <recent name="D:\Student\gulimall\renren-fast\src\main\resources" />
+      <recent name="D:\Student\gulimall\gulimall-order\src\main\resources" />
+      <recent name="D:\Student\gulimall\gulimall-order\src\main\java\com\fxc\gulimallorder" />
+      <recent name="D:\Student\gulimall\gulimall-coupon\src\main\resources" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="JUnit.GulimallThirdPartyApplicationTests.test">
+    <configuration name="GulimallProductApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fxc.gulimallproduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fxc.gulimallproduct" />
+      <option name="MAIN_CLASS_NAME" value="com.fxc.gulimallproduct.GulimallProductApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallProductApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-product" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fxc.gulimallproduct.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fxc.gulimallproduct" />
+      <option name="MAIN_CLASS_NAME" value="com.fxc.gulimallproduct.GulimallProductApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallThirdPartyApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-third-party" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fxc.thirdparty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fxc.thirdparty" />
+      <option name="MAIN_CLASS_NAME" value="com.fxc.thirdparty.GulimallThirdPartyApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallThirdPartyApplicationTests.test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-third-party" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fxc.thirdparty.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.fxc.thirdparty" />
+      <option name="MAIN_CLASS_NAME" value="com.fxc.thirdparty.GulimallThirdPartyApplicationTests" />
+      <option name="METHOD_NAME" value="test" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallCouponApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-coupon" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallcoupon.GulimallCouponApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallGatewatApplication (2)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="gulimall-gatewat" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.fxc.gulimallgatewat.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallgatewat.GulimallGatewatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallGatewatApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallgatewat.GulimallGatewatApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallMemberApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-member" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallmember.GulimallMemberApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallOrderApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-order" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallorder.GulimallOrderApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallProductApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-product" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallproduct.GulimallProductApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallThirdPartyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-third-party" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.thirdparty.GulimallThirdPartyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GulimallWareApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gulimall-ware" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.fxc.gulimallware.GulimallWareApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RenrenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="renren-fast" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="io.renren.RenrenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Spring Boot.GulimallGatewatApplication (2)" />
+        <item itemvalue="JUnit.GulimallThirdPartyApplicationTests.test" />
+        <item itemvalue="JUnit.GulimallThirdPartyApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.GulimallProductApplicationTests.test" />
+        <item itemvalue="JUnit.GulimallProductApplicationTests" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <option name="contentProportion" value="0.24586628" />
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Not Started" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="3bf1c784-7bb7-4e55-968d-4296942e0d68" name="Default Changelist" comment="" />
+      <created>1660208536334</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1660208536334</updated>
+      <workItem from="1660208538349" duration="2740000" />
+      <workItem from="1660227040916" duration="546000" />
+      <workItem from="1660228026204" duration="1365000" />
+      <workItem from="1660229512224" duration="1923000" />
+      <workItem from="1660270841237" duration="16414000" />
+      <workItem from="1660372557487" duration="7951000" />
+      <workItem from="1660408118430" duration="1125000" />
+      <workItem from="1660409280505" duration="2107000" />
+      <workItem from="1660437616852" duration="9975000" />
+      <workItem from="1660487144435" duration="4823000" />
+      <workItem from="1660497971530" duration="374000" />
+      <workItem from="1660529353177" duration="10485000" />
+      <workItem from="1660749733101" duration="82000" />
+      <workItem from="1660750173091" duration="2976000" />
+      <workItem from="1660782642450" duration="367000" />
+      <workItem from="1660803993180" duration="6214000" />
+      <workItem from="1662014750469" duration="6470000" />
+      <workItem from="1662103252253" duration="6691000" />
+      <workItem from="1662178132707" duration="7874000" />
+      <workItem from="1662187508992" duration="21910000" />
+      <workItem from="1662275568892" duration="5657000" />
+      <workItem from="1662305285401" duration="3481000" />
+    </task>
+    <task id="LOCAL-00001" summary="逆向生成了基本crud">
+      <created>1660295708994</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1660295708994</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="逆向生成了基本crud" />
+    <option name="LAST_COMMIT_MESSAGE" value="逆向生成了基本crud" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="324" y="92" key="#Notifications" timestamp="1660293926476">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="324" y="92" key="#Notifications/0.0.1463.866@0.0.1463.866" timestamp="1660293926476" />
+    <state x="324" y="92" key="#Project_Structure" timestamp="1660294393215">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="324" y="92" key="#Project_Structure/0.0.1463.866@0.0.1463.866" timestamp="1660294393215" />
+    <state x="705" y="170" key="#com.intellij.ide.util.MemberChooser" timestamp="1662308155096">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="537" y="143" key="#com.intellij.ide.util.MemberChooser/0.0.1463.866@0.0.1463.866" timestamp="1660552265539" />
+    <state x="705" y="170" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1032@0.0.1920.1032" timestamp="1662308155095" />
+    <state x="397" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1660546368004">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="397" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1463.866@0.0.1463.866" timestamp="1660546368004" />
+    <state x="462" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1660290141030">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="462" y="180" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1463.866@0.0.1463.866" timestamp="1660290141030" />
+    <state x="236" y="28" key="CommitChangelistDialog2" timestamp="1660295694722">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="236" y="28" key="CommitChangelistDialog2/0.0.1463.866@0.0.1463.866" timestamp="1660295694722" />
+    <state x="93" y="93" width="1277" height="680" key="DiffContextDialog" timestamp="1660229189427">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="93" y="93" width="1277" height="680" key="DiffContextDialog/0.0.1463.866@0.0.1463.866" timestamp="1660229189427" />
+    <state width="1393" height="213" key="GridCell.Tab.0.bottom" timestamp="1662281621227">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.0.bottom/0.0.1463.866@0.0.1463.866" timestamp="1662111036052" />
+    <state width="1393" height="213" key="GridCell.Tab.0.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621227" />
+    <state width="1393" height="213" key="GridCell.Tab.0.center" timestamp="1662281621227">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.0.center/0.0.1463.866@0.0.1463.866" timestamp="1662111036052" />
+    <state width="1393" height="213" key="GridCell.Tab.0.center/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621227" />
+    <state width="1393" height="213" key="GridCell.Tab.0.left" timestamp="1662281621227">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.0.left/0.0.1463.866@0.0.1463.866" timestamp="1662111036052" />
+    <state width="1393" height="213" key="GridCell.Tab.0.left/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621227" />
+    <state width="1393" height="213" key="GridCell.Tab.0.right" timestamp="1662281621227">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.0.right/0.0.1463.866@0.0.1463.866" timestamp="1662111036052" />
+    <state width="1393" height="213" key="GridCell.Tab.0.right/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621227" />
+    <state width="1393" height="213" key="GridCell.Tab.1.bottom" timestamp="1662281621228">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.1.bottom/0.0.1463.866@0.0.1463.866" timestamp="1662111036053" />
+    <state width="1393" height="213" key="GridCell.Tab.1.bottom/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621228" />
+    <state width="1393" height="213" key="GridCell.Tab.1.center" timestamp="1662281621227">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.1.center/0.0.1463.866@0.0.1463.866" timestamp="1662111036052" />
+    <state width="1393" height="213" key="GridCell.Tab.1.center/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621227" />
+    <state width="1393" height="213" key="GridCell.Tab.1.left" timestamp="1662281621227">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.1.left/0.0.1463.866@0.0.1463.866" timestamp="1662111036052" />
+    <state width="1393" height="213" key="GridCell.Tab.1.left/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621227" />
+    <state width="1393" height="213" key="GridCell.Tab.1.right" timestamp="1662281621228">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state width="1045" height="228" key="GridCell.Tab.1.right/0.0.1463.866@0.0.1463.866" timestamp="1662111036053" />
+    <state width="1393" height="213" key="GridCell.Tab.1.right/0.0.1920.1032@0.0.1920.1032" timestamp="1662281621228" />
+    <state x="262" y="89" key="Maven.ArtifactSearchDialog" timestamp="1660290543916">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="262" y="89" key="Maven.ArtifactSearchDialog/0.0.1463.866@0.0.1463.866" timestamp="1660290543916" />
+    <state x="306" y="91" key="SettingsEditor" timestamp="1662187687869">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="233" y="76" key="SettingsEditor/0.0.1463.866@0.0.1463.866" timestamp="1660229588496" />
+    <state x="306" y="91" key="SettingsEditor/0.0.1920.1032@0.0.1920.1032" timestamp="1662187687869" />
+    <state x="612" y="349" key="VCS.EditChangelistDialog" timestamp="1660227528913">
+      <screen x="0" y="0" width="1463" height="866" />
+    </state>
+    <state x="612" y="349" key="VCS.EditChangelistDialog/0.0.1463.866@0.0.1463.866" timestamp="1660227528913" />
+    <state x="636" y="293" width="1251" height="637" key="new project wizard" timestamp="1662194275197">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="91" y="218" key="new project wizard/0.0.1463.866@0.0.1463.866" timestamp="1660408355967" />
+    <state x="636" y="293" width="1251" height="637" key="new project wizard/0.0.1920.1032@0.0.1920.1032" timestamp="1662194275197" />
+    <state x="601" y="242" width="700" height="530" key="recent.locations.popup" timestamp="1662196044179">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="601" y="242" width="700" height="530" key="recent.locations.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1662196044179" />
+    <state x="511" y="235" width="882" height="807" key="run.anything.popup" timestamp="1662181124077">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="389" y="197" width="672" height="677" key="run.anything.popup/0.0.1463.866@0.0.1463.866" timestamp="1660376576357" />
+    <state x="511" y="235" width="882" height="807" key="run.anything.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1662181124077" />
+    <state x="517" y="217" width="882" height="808" key="search.everywhere.popup" timestamp="1662307892259">
+      <screen x="0" y="0" width="1920" height="1032" />
+    </state>
+    <state x="394" y="182" width="672" height="678" key="search.everywhere.popup/0.0.1463.866@0.0.1463.866" timestamp="1660552259319" />
+    <state x="517" y="217" width="882" height="808" key="search.everywhere.popup/0.0.1920.1032@0.0.1920.1032" timestamp="1662307892259" />
+  </component>
+</project>

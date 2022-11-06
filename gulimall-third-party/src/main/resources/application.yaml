@@ -1,0 +1,15 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+
+  application:
+    name: gulimall-third-party
+oss:
+  accessKeyId: LTAI5tChZp47YiuWNLChLepq
+  accessKeySecret: hpzjkNXS9DLvTIwqLInNkUGIqDKjDq
+  bucketName: fxcbucket
+  endPoint: oss-cn-fuzhou.aliyuncs.com
+server:
+  port: 30000
