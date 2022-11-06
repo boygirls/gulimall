@@ -7,9 +7,9 @@ spring:
   application:
     name: gulimall-third-party
 oss:
-  accessKeyId: LTAI5tChZp47YiuWNLChLepq
-  accessKeySecret: hpzjkNXS9DLvTIwqLInNkUGIqDKjDq
-  bucketName: fxcbucket
-  endPoint: oss-cn-fuzhou.aliyuncs.com
+  accessKeyId: 
+  accessKeySecret: 
+  bucketName: 
+  endPoint: 
 server:
   port: 30000
